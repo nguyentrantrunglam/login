@@ -1,38 +1,152 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(149deg, rgba(255, 255, 255, 1) 83%, rgba(151, 205, 226, 0.829) 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.logo-background {
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #36bdf8, rgb(28, 139, 230));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  height: 70%;
+  margin-top: 10%;
+}
+
+.right {
+  width: 50%;
+}
+
+.main {
+  width: 100%;
+  height: 90%;
+}
+
+.back {
+  width: 100%;
+  height: 10%;
+  text-align: left;
+  padding-top: 40px;
+  padding-left: 20px;
+  color: #000;
+}
+
+.form {
+  text-align: left;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.form div input {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.form-input {
+  width: 90%;
+  font-size: 14px;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  color: grey;
+  margin-top: 7px;
+}
+
+.box-input {
+  border-bottom: 1px solid #000;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+input[type=text],
+input[type=password] {
+  border: none
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=number]:focus {
+  outline: none;
+}
+
+.divider {
+  border-left: #000 1px solid;
+  height: 80%;
+  margin-right: 5px;
+}
+
+.login-button {
+  width: 100%;
+  height: 40px;
+  background: rgb(12, 109, 227);
+  color: #fff;
+  border: none;
+  margin-bottom: 5%;
+}
+
+.login-button:hover {
+  background-color: #0791e7;
+  cursor: pointer;
+}
+
+a {
+  color: rgb(49, 113, 233);
+  text-decoration: none;
+}
+
+.help {
+  font-weight: 700;
+  font-size: 13px;
+  color: black;
+}
+
+.yellow-circle-question {
+  color: orangered;
+}
+
+.help a {
+  color: #000;
+}
+
+.sms-code {
+  font-size: 40px !important;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.code{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.white-text{
+  color: #fff !important;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
